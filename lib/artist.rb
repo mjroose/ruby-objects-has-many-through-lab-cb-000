@@ -18,7 +18,9 @@ class Artist
   end
 
   def songs #use select to return a list of all of the artist's songs
-    binding.pry
+    Song.all.select do |song|
+      song.artist == self
+    end
   end
 
   def genres #returns a list of the genre of each song
