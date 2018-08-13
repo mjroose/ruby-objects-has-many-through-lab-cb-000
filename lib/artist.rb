@@ -12,7 +12,7 @@ class Artist
   end
 
   def new_song(title, genre) #add a new song and make song aware of its artist
-
+    Song.new(title, self, genre)
   end
 
   def songs #use select to return a list of all of the artist's songs
