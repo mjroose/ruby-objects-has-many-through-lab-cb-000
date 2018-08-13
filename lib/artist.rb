@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
   attr_reader :name
   @@all = []
@@ -16,7 +18,7 @@ class Artist
   end
 
   def songs #use select to return a list of all of the artist's songs
-
+    binding.pry
   end
 
   def genres #returns a list of the genre of each song
